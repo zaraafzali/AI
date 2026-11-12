@@ -18,7 +18,7 @@ A backtracking solver for Killer Sudoku puzzles, written in Python. It treats th
 
 ```
 .
-├── killer_sudoku.py   # Solver class, input parser, and main script
+├── killerSudokuSolver.py   # Solver class, input parser, and main script
 └── input3.txt         # Example puzzle (your input file)
 ```
 
@@ -66,7 +66,7 @@ The input file has three parts, in this order:
 Set the path to your input file in the script, then run:
 
 ```bash
-python killer_sudoku.py
+python killerSudokuSolver.py
 ```
 
 Example output for a solvable puzzle:
@@ -94,13 +94,5 @@ Example output for a solvable puzzle:
 - The solver always fills the first empty cell it finds, which can be slow on hard puzzles.
 - Cage input must be well formed. Missing sums or uncovered cells can cause incorrect results.
 
-## Suggested Improvements
-
-- Accept the input path as a command-line argument.
-- Choose the empty cell with the fewest legal values (minimum remaining values) to speed up the search.
-- Validate the input file and report clear errors for malformed lines.
-- Move the script's main code under `if __name__ == "__main__":`.
-
 ## License
 
-Add your license here.
